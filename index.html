@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Word Guess Game - Hangman</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+
+
+<body>
+
+
+  <div class "container">
+
+    <div class="jumbotron jumbotron-fluid p-3 mb-2 bg-warning text-dark" ">
+        <h1 class="display-4 "> <strong> WORLD CUP - Hangman Guess Game </strong></h1>
+        <img src="assets/images/worldcup.jpeg " class="img-fluid " alt="Responsive image ">
+        <p class="lead "><strong> Guess the World Cup Team </strong></p>
+    </div>
+
+
+    <div class="card ">
+      <div class="card-heading ">
+        <h3 class="card-title ">World Cup Team to Guess</h3>
+      </div>
+      <div class="card-body ">
+        <span id="wordToGuess ">_ _ _ _ _ _ _</span> 
+      </div>
+    </div>
+
+
+    <div class="card ">
+      <div class="card-body ">
+        Wrong Guesses: <span id="wrongGuesses "></span>
+      </div>
+    </div>
+
+    <div class="card-group ">
+      <div class="card ">
+        <img class="card-img-top " src="assets/images/guesses.jpeg " alt="Card image cap ">
+        <div class="card-body ">
+          <h5 class="card-title ">Guesses Left:
+            <span id="numGuess "> 9 </span>
+          </h5>
+        </div>
+      </div>
+      <div class=" card ">
+        <img class="card-img-top " src="assets/images/wins.jpeg " alt="Card image cap ">
+        <div class="card-body ">
+          <h5 class="card-title ">Win Counter:
+            <span id="winCounter ">0</span>
+          </h5>
+        </div>
+      </div>
+      <div class="card ">
+        <img class="card-img-top " src="assets/images/loss.jpeg " alt="Card image cap ">
+        <div class="card-body ">
+          <h5 class="card-title ">Loss Counter:
+            <span id="lossCounter ">0</span>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="assets/javascript/game.js "></script>
+
+</body>
+
+</html>
